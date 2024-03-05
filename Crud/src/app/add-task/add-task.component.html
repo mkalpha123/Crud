@@ -1,0 +1,14 @@
+<form>
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" [(ngModel)]="task.title" placeholder="Enter task title" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" [(ngModel)]="task.description" placeholder="Enter task description" [ngModelOptions]="{standalone: true}"></textarea>
+    </div>
+    <button type="button" (click)="addTask()">Add Task</button>
+    <div class="app-home"><app-home></app-home></div>
+  </form>
+
+  
